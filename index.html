@@ -88,7 +88,7 @@
     <hr>
     <p class="ex1">
        <h3 id="Introduction">Introduction</h3>
-      <pre>
+      <pre id = "Introduction1">
        With our dependence on them, cell phones help us in education, communication, and even in entertaining. Therefore, if we use our gadgets more frequently, 
        that means faster charging and thus the need for more effective methods to keep them charged. The paper discusses the current status of charging technology, 
        challenges faced by engineers to push limits for charging speeds and efficiency, safety in the domain of fast charging, and what one would expect from charging
@@ -100,7 +100,7 @@
    <hr>
     <p class="ex1">
       <h3 id="The Current State of Charging Technology">The Current State of Charging Technology</h3>
-      <pre>
+      <pre id ="AnalysisCount">
         A few years ago, charging a smartphone could take hours, but today, with our advancements in technology we have reduced that time drastically.
         An example in how charging technology has evolved can be see in the comparison between the two different mobile device models of the OnePlus
         smartphones. The OnePlus 6 (released in 2018), the OnePlus’s first release including fast charging technology, could deliver up to 20W of power
@@ -130,7 +130,7 @@
          <hr>
     <p class="ex1">
        <h3 id="Challenges and sefety concerns faced by engineers when pushing charging speed and efficiency">Challenges and sefety concerns faced by engineers when pushing charging speed and efficiency</h3>
-      <pre>
+      <pre id= "AnalysisCount1">
        One of the most significant challenges engineers face when attempting to increase charging speeds is managing the heat generated during the process. Faster charging 
        naturally leads to higher energy output, which in turn generates more heat. This is particularly problematic for lithium-ion batteries, which are widely used in mobile
        devices. Escalating the charging current speeds up the process of charging, but it also has the unintended side effect of hastening the battery's deterioration (Kumar 
@@ -141,7 +141,7 @@
   <hr>
     <p class="ex1">
        <h3 id="The Future of Charging Technology">The Future of Charging Technology</h3>
-      <pre>
+      <pre id="AnalysisCount2">
         Of course, in the future, revolutionary changes in charging technology are foreseen, fully changing how we power our mobile phones. By far, the most captivating investment appears to be in the realm
         of solid-state battery technology. Whereas conventional lithium-ion batteries hold liquid electrolytes internally, solid-state batteries use a solid electrolyte that promises better energy density and 
         safety. All these mean that with increased energy density, devices can go longer on one charge, and the solid electrolyte prevents overheating, making those batteries even safer and more reliable. Also, 
@@ -159,7 +159,7 @@
  <hr>
     <p class="ex1">
        <h3 id="Conclusion">Conclusion</h3>
-      <pre>
+      <pre id = "AnalysisCount3">
         The future of charging technologies thus looks brilliant, filled with changes that can offer a whole new dimension to powering mobile devices. For example, solid-state batteries promise faster,
         safer, and more efficient ways of charging to overcome the present limitation-overheating and slow charges. Lastly, it is said that AI in the charging process is one of the most promising avenues
         in terms of energy optimization for prolonging battery life. Though it be heat management and battery degradation, studies are going on and not stopping with an after-effect improvement. With such
@@ -261,15 +261,13 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const AnalysisCount = displayWordCount("The Current State of Charging Technology");
-    const AnalysisCount2 = displayWordCount("The Current State of Charging Technology");
-    const AnalysisCount3 = displayWordCount("Challenges and sefety concerns faced by engineers when pushing charging speed and efficiency");
-    const AnalysisCount4 = displayWordCount("The Future of Charging Technology");
-    const AnalysisCount5 = displayWordCount("Conclusion");
-    const AnalysisCount6 = displayWordCount("References");
+    const IntroductionCount = displayWordCount("Introduction1");
+    const AnalysisCount11 = displayWordCount("AnalysisCount");
+    const AnalysisCount21 = displayWordCount("AnalysisCount1");
+    const AnalysisCount31 = displayWordCount("AnalysisCount2");
+    const AnalysisCount41 = displayWordCount("AnalysisCount3");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + AnalysisCount2 + AnalysisCount3 + AnalysisCount4 + AnalysisCount5 + AnalysisCount6;
+    const totalWordCount = IntroductionCount + AnalysisCount11 + AnalysisCount21 + AnalysisCount31;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
