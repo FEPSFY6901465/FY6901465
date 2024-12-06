@@ -1,23 +1,21 @@
 <html>
   <head>
-    <img src="Screenshot_20241205_224854_Chrome.jpg" alt="Banner" width="900" height="300">
-    <h1><b>ENG0018  Computer  Laboratory 2023/24</b></h1>
-    <h2>Student URN: 6901465</h2>
-    <hr>
-    <h2 style=”font-family:calibri:”><b> How Far Can We Push Charging Speed and Efficiency in Mobile Devices? </b></h2>
-    <hr>
-    <h3>Presentation:</h3>
-    <video src="" width="800" height="450" controls>
-    </video>
-    <hr>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-      table {
-        font-family: arial, sans-serif;
-        border-collapse;
-        width:60%;
-
+      body {
+        background-color: #808080;
+        margin-left: 50px;
       }
-      td, th{
+      h1, h2, h3 {
+        font-family: Calibri, sans-serif;
+      }
+      table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 60%;
+      }
+      td, th {
         border: 2px solid #020202;
         text-align: left;
         padding: 10px;
@@ -25,132 +23,114 @@
       tr:nth-child(even) {
         background-color: #f0edec;
       }
+      .exl {
+        margin-left: 250px;
+      }
+      .mySlides {
+        display: none;
+      }
     </style>
-<style>
-  p.exl {
-    margin-left: 250px;
-  }
-</style>
+    <title>ENG0018 Computer Laboratory 2023/24</title>
   </head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link  rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <style>
-    .mySlides {display:none}
-  </style>
-  <body style="background-color:#808080;margin-left:50px;">
-    
+  <body>
+    <img src="Screenshot_20241205_224854_Chrome.jpg" alt="Banner" width="900" height="300">
+    <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
+    <h2>Student URN: 6901465</h2>
     <hr>
+    <h2><b>How Far Can We Push Charging Speed and Efficiency in Mobile Devices?</b></h2>
+    <hr>
+    <h3>Presentation:</h3>
+    <video src="" width="800" height="450" controls></video>
+    <hr>
+
     <table>
       <tr>
-        <th><h3>Table of contents</h3></th>
+        <th><h3>Table of Contents</h3></th>
       </tr>
-      <tr>
-        <td><a href="#Introduction">Introduction</td>
-      </tr>
-      <tr>
-        <td><a href="#The Current State of Charging Technology">The Current State of Charging Technology</td>
-      </tr>
-      <tr>
-        <td><a href="#Challenges and sefety concerns faced by engineers when pushing charging speed and efficiency">Challenges and sefety concerns faced by engineers when pushing charging speed and efficiency</td>
-      </tr>
-       <tr>
-        <td><a href="#The Future of Charging Technology">The Future of Charging Technology</td>
-      </tr>
-         <tr>
-        <td><a href="#Conclusion">Conclusion</td>
-      </tr>
-      <tr>
-        <td><a href="#References">References</td>
-      </tr>
-
+      <tr><td><a href="#Introduction">Introduction</a></td></tr>
+      <tr><td><a href="#TheCurrentStateOfChargingTechnology">The Current State of Charging Technology</a></td></tr>
+      <tr><td><a href="#ChallengesAndSafetyConcerns">Challenges and Safety Concerns Faced by Engineers When Pushing Charging Speed and Efficiency</a></td></tr>
+      <tr><td><a href="#TheFutureOfChargingTechnology">The Future of Charging Technology</a></td></tr>
+      <tr><td><a href="#Conclusion">Conclusion</a></td></tr>
+      <tr><td><a href="#References">References</a></td></tr>
     </table>
+
     <p id="date&time"></p>
     <script>
-      //Javascript to display the date and time on my webpage
+      // Javascript to display the date and time on the webpage
       const d = new Date();
       document.getElementById("date&time").innerHTML = d;
     </script>
     <hr>
-    
+
+    <h3 id="Introduction">Introduction</h3>
+    <pre>
+      We have become very dependent on mobile devices, with their ability to aid us in education, communication, and entertainment.
+      As we rely more on these devices, we desire faster and more efficient charging options. On this article, we will be talking about
+      the current state of charging technology, challenges faced by engineers when pushing charging speed and efficiency, safety concerns
+      in fast charging, and the future of charging technology.
+    </pre>
     <hr>
-    <p class="ex1">
-       <h3 id="Introduction">Introduction</h3>
-      <pre>
-        We have become very dependent on mobile devices, with their ability to aid us in education, communication, and entertainment.
-        As we rely more on these devices, we desire faster and more efficient charging options. On this article we will be talking about
-        the current state of charging technology, challenges faced by engineers when pushing charging speed and efficiency, safety concerns
-        in fast charging, and the future of charging technology.
-      </pre>
-  </p>
-    <hr>
-    
-   <hr>
-    <p class="ex1">
-      <h3 id="The Current State of Charging Technology">The Current State of Charging Technology</h3>
-      <pre>
-       A few years ago, charging a smartphone could take hours, but today, with our advancements in technology we have reduced that time drastically.
-        An example in how charging technology has evolved can be see in the comparison between the two different mobile device models of the OnePlus
-        smartphones. The OnePlus 6 (released in 2018), the OnePlus’s first release including fast charging technology, could deliver up to 20W of power
-        to the device using the Fast-Charging feature, allowing a full charge from 0% to 100% to be over an hour (OnePlus, 2018). In 2021, the OnePlus
-        9 Pro introduced a new and improved charging technology (Warp Charge 65), which could deliver up to 65W of power to the device, allowing the device 
-        to be charged from 0% to 100% in just 30 minutes (OnePlus, 2021). This significant increase in power in just a span of 3 years shows the amazing potential
-        of future charging technology.
-        
-        Another major trend in mobile charging technology is wireless charging. Wireless charging, made popular by brands like Samsung and Apple, has made charging more 
-        convenient. However, this convenience comes with some downsides, particularly in speed and efficiency. Wired charging is typically more efficient, and tests have
-        shown that wireless charging can take significantly longer. For instance, it took approximately 206 minutes to charge a phone wirelessly, compared to just 86 minutes
-        with a wired charger. This demonstrates that wireless charging can take more than twice as long as wired charging. highlighting the current limitations in charging speed 
-        in wireless technology (G. Bekaroo and A. Seeam, 2016).
-      </pre>
+
+    <h3 id="TheCurrentStateOfChargingTechnology">The Current State of Charging Technology</h3>
+    <pre>
+      A few years ago, charging a smartphone could take hours, but today, with our advancements in technology, we have reduced that time drastically.
+      An example of how charging technology has evolved can be seen in the comparison between the two different mobile device models of the OnePlus
+      smartphones. The OnePlus 6 (released in 2018), the OnePlus's first release including fast charging technology, could deliver up to 20W of power
+      to the device using the Fast-Charging feature, allowing a full charge from 0% to 100% to take over an hour (OnePlus, 2018). In 2021, the OnePlus
+      9 Pro introduced a new and improved charging technology (Warp Charge 65), which could deliver up to 65W of power to the device, allowing the device 
+      to be charged from 0% to 100% in just 30 minutes (OnePlus, 2021). This significant increase in power in just a span of 3 years shows the amazing potential
+      of future charging technology.
+
+      Another major trend in mobile charging technology is wireless charging. Wireless charging, made popular by brands like Samsung and Apple, has made charging more 
+      convenient. However, this convenience comes with some downsides, particularly in speed and efficiency. Wired charging is typically more efficient, and tests have
+      shown that wireless charging can take significantly longer. For instance, it took approximately 206 minutes to charge a phone wirelessly, compared to just 86 minutes
+      with a wired charger. This demonstrates that wireless charging can take more than twice as long as wired charging, highlighting the current limitations in charging speed 
+      in wireless technology (G. Bekaroo and A. Seeam, 2016).
+    </pre>
     <img src="Picture1.png" alt="Banner" width="400" height="300">
     <img src="Picture2.png" alt="Banner" width="600" height="400">
-  </p>
     <hr>
-         <hr>
-    <p class="ex1">
-       <h3 id="Challenges and sefety concerns faced by engineers when pushing charging speed and efficiency">Challenges and sefety concerns faced by engineers when pushing charging speed and efficiency</h3>
-      <pre>
-          One of the most significant challenges engineers face when attempting to increase charging speeds is managing the heat generated during the process. Faster charging 
+
+    <h3 id="ChallengesAndSafetyConcerns">Challenges and Safety Concerns Faced by Engineers When Pushing Charging Speed and Efficiency</h3>
+    <pre>
+      One of the most significant challenges engineers face when attempting to increase charging speeds is managing the heat generated during the process. Faster charging 
       naturally leads to higher energy output, which in turn generates more heat. This is particularly problematic for lithium-ion batteries, which are widely used in mobile
       devices. Escalating the charging current speeds up the process of charging, but it also has the unintended side effect of hastening the battery's deterioration (Kumar 
-      Thakur et al., 2023). High temperatures have several bad effects on the lithium-ion batteries, leading to reduced performance, shortened lifespan, and even safety hazards (Chavan, S., 2024).
-      </pre>
-  </p>
+      Thakur et al., 2023). High temperatures have several negative effects on lithium-ion batteries, leading to reduced performance, shortened lifespan, and even safety hazards (Chavan, S., 2024).
+    </pre>
     <hr>
-  <hr>
-    <p class="ex1">
-       <h3 id="The Future of Charging Technology">The Future of Charging Technology</h3>
-      <pre>
-        
-      </pre>
-  </p>
-    <hr>
- <hr>
-    <p class="ex1">
-       <h3 id="Conclusion">Conclusion</h3>
-      <pre>
-        
-      </pre>
-  </p>
-    <hr>
-  <hr>
-    <p class="ex1">
-       <h3 id="References">References</h3>
-      <pre>
-        Chavan, S., Bhumarapu Venkateswarlu, Salman, M., Liu, J., Pawar, P., Joo, S.W., Choi, G.S. and Kim, S.C. (2024). Thermal management strategies for lithium-ion batteries
-        in electric vehicles: Fundamentals, recent advances, thermal models, and cooling techniques. International Journal of Heat and Mass Transfer, [online] 232, pp.125918–125918.
-       Available at: <a href="https://www.sciencedirect.com/science/article/pii/S0017931024007488">"Thermal management strategies for lithium-ion batteries in electric vehicles: Fundamentals, recent advances, thermal models, and cooling techniques - ScienceDirect.">Thermal management strategies for lithium-ion batteries in electric vehicles: Fundamentals, recent advances, thermal models, and cooling techniques - ScienceDirect.</a>
-        [Accessed 2 December 2024].
-        
-       Kumar Thakur, A., Sathyamurthy, R., Velraj, R., Saidur, R., Pandey, A.K., Ma, Z., Singh, P., Hazra, S.K., Wafa Sharshir, S., Prabakaran, R., Kim, S.C., Panchal, S. and Ali, H.M. (2023).
-        A state-of-the art review on advancing battery thermal management systems for fast-charging. Applied Thermal Engineering, 226, p.120303. [online] Available at: A state-of-the art
-        review on advancing battery thermal management systems for fast-charging - ScienceDirect [Accessed 2 December 2024].
-      Bekaroo, G. and Seeam, A., 2016. Comparison of wireless and wired charging systems for mobile devices. IEEE Transactions on Industrial Electronics, 63(6), pp. 3821-3829. [online] Available at: Improving wireless charging energy efficiency of mobile phones: Analysis of key practices | IEEE Conference Publication | IEEE Xplore  [Accessed 2 December 2024].
-      OnePlus, 2018. OnePlus 6: Dash Charge Technology. [online] Available at: OnePlus 6 specs - OnePlus (Global) [Accessed 2 December 2024].
-      OnePlus, 2021. OnePlus 9 Pro: Warp Charge 65. [online] Available at: OnePlus 9 Pro Specs - OnePlus (United Kingdom) [Accessed 2 December 2024].
 
-      </pre>
-  </p>
+    <h3 id="TheFutureOfChargingTechnology">The Future of Charging Technology</h3>
+    <pre>
+      <!-- Content for the Future of Charging Technology goes here -->
+    </pre>
+    <hr>
+
+    <h3 id="Conclusion">Conclusion</h3>
+    <pre>
+      <!-- Content for Conclusion goes here -->
+    </pre>
+    <hr>
+
+    <h3 id="References">References</h3>
+    <pre>
+      Chavan, S., Bhumarapu Venkateswarlu, Salman, M., Liu, J., Pawar, P., Joo, S.W., Choi, G.S., and Kim, S.C. (2024). Thermal management strategies for lithium-ion batteries
+      in electric vehicles: Fundamentals, recent advances, thermal models, and cooling techniques. International Journal of Heat and Mass Transfer, [online] 232, pp.125918–125918.
+      Available at: <a href="https://www.sciencedirect.com/science/article/pii/S0017931024007488">Thermal management strategies for lithium-ion batteries in electric vehicles: 
+      Fundamentals, recent advances, thermal models, and cooling techniques - ScienceDirect</a> [Accessed 2 December 2024].
+
+      Kumar Thakur, A., Sathyamurthy, R., Velraj, R., Saidur, R., Pandey, A.K., Ma, Z., Singh, P., Hazra, S.K., Wafa Sharshir, S., Prabakaran, R., Kim, S.C., Panchal, S., and Ali, H.M. (2023).
+      A state-of-the art review on advancing battery thermal management systems for fast-charging. Applied Thermal Engineering, 226, p.120303. [online] Available at: <a href="https://www.scien
+      cedirect.com/science/article/pii/S1359431123005660">A state-of-the art review on advancing battery thermal management systems for fast-charging - ScienceDirect</a> [Accessed 2 December 2024].
+
+      Bekaroo, G. and Seeam, A., 2016. Comparison of wireless and wired charging systems for mobile devices. IEEE Transactions on Industrial Electronics, 63(6), pp. 3821-3829. [online] Available at:
+      <a href="https://ieeexplore.ieee.org/document/7468834">IEEE Xplore</a> [Accessed 2 December 2024].
+
+      OnePlus, 2018. OnePlus 6: Dash Charge Technology. [online] Available at: <a href="https://www.oneplus.com/6">OnePlus 6 specs - OnePlus</a> [Accessed 2 December 2024].
+
+      OnePlus, 2021. OnePlus 9 Pro: Warp Charge 65. [online] Available at: <a href="https://www.oneplus.com/9pro">OnePlus 9 Pro Specs - OnePlus</a> [Accessed 2 December 2024].
+    </pre>
     <hr>
   </body>
 </html>
